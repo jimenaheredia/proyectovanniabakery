@@ -1,0 +1,514 @@
+body {
+    background-color: #F8F7DA;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0;
+    padding: 0;
+}
+.menu {
+    list-style-type: none;
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-align: center;
+}
+.menu li{
+    display:inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    font-family: 'Anek Devanagari';
+    position: relative;
+    top: -10px;
+}
+.menu li:nth-last-child {
+    margin-right: 0;
+}
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #493843;
+}
+.menu li .imagecontainer img {
+    position: relative;
+    top: 35px;
+    display:block;
+    width: 100px;
+    height: auto;
+}
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 40px; /* Ajusta el margen superior para centrar verticalmente el contenido */
+}
+.leftcontent {
+    float: left;
+    max-width: 400px; /* Ajusta el ancho máximo del contenido izquierdo */
+    margin-right: 20px; /* Agrega un margen derecho para separar del elemento de la derecha */
+}
+.head1 {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 35px;
+    margin-top: 0;/* Elimina el margen superior del encabezado */
+    text-align: center; /* Centra horizontalmente el texto */
+}
+.pnosotros {
+    font-family: 'DM Sans';
+    font-size: 15px;
+    color:#942200;
+    max-width: 400px; /* Ajusta el ancho máximo del párrafo */
+    text-align: justify; /* Justifica el texto */
+    white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
+}
+.section1 .vannia {
+    float: right;
+    max-width: calc(50% - 40px); /* Ajusta el ancho máximo de la imagen */
+    margin-left: 100px; /* Agrega un margen izquierdo para separar del elemento de la izquierda */
+}
+.section2 {
+    height: 350px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+.containerservicios {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 23px;
+}
+.head2 {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.serviciossub {
+    flex-grow: 1;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+}
+.head3 {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.serviciossub i {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #493843;
+}
+.pservicios {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    color: #942200;
+    max-width: 250px; /* Ajusta el ancho máximo del párrafo */
+    text-align: center;
+    white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
+    margin: auto;
+}
+.section3 {
+    height: 530px;
+    padding: 7px;
+    margin-bottom: 8px;
+}
+.containercarta1 {
+    display: flex;
+    margin-left: 400px;
+    margin-right: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 23px;
+}
+.pcarta {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    color: #942200;
+    max-width: fit-content;
+    text-align: center;
+    white-space: pre-wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.containercarta2 {
+    display: flex;
+    margin-left: 420px;
+    margin-right: 420px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 23px;
+}
+.cartaimg {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.section4 {
+    height: 530px;
+    padding: 7px;
+    margin-bottom: 7px;
+    background-color: white;
+}
+.containercontactanos {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+}
+.leftcontactanos {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
+.mapa {
+    width: 500px;
+    height: 300px;
+}
+.pcontactanos1 {
+    color: #493843;
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.informaciongeneral {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.informacion{
+    width: 115px;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.direc {
+    justify-content: space-between;
+    margin-top: 0;
+}
+.fa-location-dot {
+    margin-top: 12px;
+    margin-right: 10px;
+    color: #942200;
+}
+.horario {
+    justify-content: space-around;
+    margin-left: 40px;
+}
+.pcontactanos2 {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 12px;
+}
+.rightcontactanos {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    flex-wrap: wrap;
+    width: 448px;
+    height: 350px;
+    margin-bottom: 90px;
+}
+.contactanosredes1 {
+    display: flex;
+    justify-content: space-between;
+}
+.whatsapp {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+}
+.whatsapp p {
+    margin-top: 0;
+    margin-left: 10px;
+}
+.correo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 77px;
+}
+.correo p {
+    margin-top: 0;
+    margin-left: 10px;
+}
+.contactanosredes2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.instagram {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+}
+.instagram p {
+    margin-top: 0;
+    margin-left: 10px;
+}
+.facebook {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+.facebook p {
+    margin-top: 0;
+    margin-left: 10px;
+}
+.rightcontactanos i {
+    color: #942200;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.pcontactanos3 {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 14px;
+}
+.contactanosform {
+    justify-content: space-between;
+    margin-left: 0;
+}
+.formnombreapellido {
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+#email {
+    width: 440px;
+    margin-bottom: 15px;
+}
+#mensaje {
+    width: 440px;
+    margin-bottom: 15px;
+}
+#nombre {
+    width:213px;
+}
+#apellido {
+    width: 215px;
+}
+.botonenviar {
+    background-color: #942200;
+    font-family: 'DM Sans';
+    border: none;
+    color:#F8F7DA;
+    padding: 8px 30px;
+    font-size: 10px;
+    margin-left: 175px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.botonenviar:hover {
+    background-color: #BF7256;
+}
+.footer {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 14px;
+    margin-left: 710px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.h3promo {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 25px;
+}
+.ppromo {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 14px;
+}
+.ppromo2 {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 12px;
+}
+.h3postres {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 23px;
+}
+.titulospostres {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 16px;
+}
+.ppostres {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 13px;
+}
+.nombretortastem {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 16px;
+}
+.ptortastem {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 14px;
+}
+.containerpedidosp {
+    height: 380px;
+    background-color:#F8F7DA;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.h3pedidosp {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+}
+.ppedidos1 {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 14px;
+    display:flex;
+    max-width: 650px; 
+    text-align: center;
+    white-space: pre-wrap; 
+    margin: auto;
+}
+.containerpasos {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: center;
+    margin-top: 23px;
+}
+.paso1 {
+    flex-grow: 1;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width:200px
+}
+.paso2 {
+    flex-grow: 1;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+.paso3 {
+    flex-grow: 1;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+.paso4 {
+    flex-grow: 1;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+.containerpasos i {
+    color: #F8F7DA;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #493843;
+    display: inline-block;
+    width: 50px; /* Ancho y alto iguales para hacer un cuadrado */
+    height: 50px;
+    line-height: 50px; /* Alinea verticalmente el icono dentro del contenedor */
+    text-align: center; /* Alinea horizontalmente el icono dentro del contenedor */
+    border-radius: 50%;
+}
+.pasospedidosp {
+    font-family: 'Anek Devanagari';
+    color: #493843;
+    font-size: 16px;
+}
+.ppedidos2 {
+    font-family: 'DM Sans';
+    color: #942200;
+    font-size: 13px;
+}
+.fotospedidosp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 23px;
+}
+.fotospp1 {
+    justify-content: center;
+    margin: 30px;
+}
+
+/* imágenes pedidos personalizados */
+.card {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.5s;
+    position: relative;
+    margin-left: 140px;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #D9AA8F;
+}
+.cardppcontent {
+    background-color:#493843cb;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.cardppcontent:hover {
+    opacity: 1;
+}
+.hcardpp {
+    font-family: 'Anek Devanagari';
+    color:#F8F7DA;
+    font-size: 23px;
+    display: flex;
+    text-align: left;
+}
+.pcardpp {
+    font-family: 'DM Sans';
+    color:#F8F7DA;
+    font-size: 13px;
+    justify-content: center;
+    text-align: justify;
+}
