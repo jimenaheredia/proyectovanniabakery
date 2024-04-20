@@ -13,6 +13,20 @@ nav {
     margin: 0 auto 0;
     padding: 0;
 }
+@media (max-width: 1199px) {
+    .menu li:not(.logocontainer) {
+        display: none;
+    }
+    .imagecontainer img {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .menu li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
 .menu {
     list-style-type: none;
     margin: 0 0 5px 0;
