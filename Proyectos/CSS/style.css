@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* inicio navbar */
 nav {
     background-color: white;
     display:flex;
@@ -41,38 +43,46 @@ nav {
     width: 100px;
     height: auto;
 }
+/* fin navbar */
+
+/* inicio página principal (index) */
+
+/* Página principal: inicio sección "Sobre Nosotros" */
 .section1 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
-    margin-top: 40px; /* Ajusta el margen superior para centrar verticalmente el contenido */
+    margin-top: 40px; 
 }
 .leftcontent {
     float: left;
-    max-width: 400px; /* Ajusta el ancho máximo del contenido izquierdo */
-    margin-right: 20px; /* Agrega un margen derecho para separar del elemento de la derecha */
+    max-width: 400px; 
+    margin-right: 20px; 
 }
 .head1 {
     font-family: 'Anek Devanagari';
     color: #493843;
     font-size: 35px;
     margin-top: 0;/* Elimina el margen superior del encabezado */
-    text-align: center; /* Centra horizontalmente el texto */
+    text-align: center; 
 }
 .pnosotros {
     font-family: 'DM Sans';
     font-size: 15px;
     color:#942200;
-    max-width: 400px; /* Ajusta el ancho máximo del párrafo */
-    text-align: justify; /* Justifica el texto */
+    max-width: 400px; 
+    text-align: justify; 
     white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
 }
 .section1 .vannia {
     float: right;
     max-width: calc(50% - 40px); /* Ajusta el ancho máximo de la imagen */
-    margin-left: 100px; /* Agrega un margen izquierdo para separar del elemento de la izquierda */
+    margin-left: 100px; 
 }
+/* Página principal: fin sección "Sobre Nosotros" */
+
+/* Página principal: inicio sección "Servicios" */
 .section2 {
     height: 350px;
     background-color: white;
@@ -117,11 +127,14 @@ nav {
     font-family: 'DM Sans';
     font-size: 14px;
     color: #942200;
-    max-width: 250px; /* Ajusta el ancho máximo del párrafo */
+    max-width: 250px; 
     text-align: center;
     white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
     margin: auto;
 }
+/* Página principal: fin sección "Servicios" */
+
+/* Página principal: inicio sección "Carta" */
 .section3 {
     height: 530px;
     padding: 7px;
@@ -159,6 +172,9 @@ nav {
     margin-left: 5px;
     margin-right: 5px;
 }
+/* Página principal: fin sección "Carta" */
+
+/* Página principal: inicio sección "Contáctanos" */
 .section4 {
     height: 530px;
     padding: 7px;
@@ -322,6 +338,10 @@ nav {
 .botonenviar:hover {
     background-color: #BF7256;
 }
+/* Página principal: fin sección "Contáctanos" */
+/* fin página principal (index) */
+
+/*footer */
 .footer {
     font-family: 'DM Sans';
     color: #942200;
@@ -330,11 +350,19 @@ nav {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* fin footer */
+
+/* inicio página "Promociones del mes" */
+
+/* Promociones del mes: inicio sección "Promociones del mes" */
 .h3promo {
     font-family: 'Anek Devanagari';
     color: #493843;
     font-size: 25px;
 }
+/* Promociones del mes: fin sección "Promociones del mes" */
+
+/* Promociones del mes: inicio sección "¡Felices Pascuas con Vannia!" */
 .ppromo {
     font-family: 'DM Sans';
     color: #942200;
@@ -345,6 +373,10 @@ nav {
     color: #942200;
     font-size: 12px;
 }
+/* Promociones del mes: fin sección "¡Felices Pascuas con Vannia!" */
+/* fin página "Promociones del mes" */
+
+/* inicio página "Postres" */
 .h3postres {
     font-family: 'Anek Devanagari';
     color: #493843;
@@ -360,6 +392,9 @@ nav {
     color: #942200;
     font-size: 13px;
 }
+/* fin página "Postres" */
+
+/* inicio página "Tortas Temáticas" */
 .nombretortastem {
     font-family: 'Anek Devanagari';
     color: #493843;
@@ -370,6 +405,10 @@ nav {
     color: #942200;
     font-size: 14px;
 }
+/* fin página "Tortas Temáticas" */
+
+/* inicio página "Pedidos Personalizados" */
+/* Pedidos Personalizados: inicio sección "Pasos" */
 .containerpedidosp {
     height: 380px;
     background-color:#F8F7DA;
@@ -436,7 +475,7 @@ nav {
     margin-bottom: 10px;
     background-color: #493843;
     display: inline-block;
-    width: 50px; /* Ancho y alto iguales para hacer un cuadrado */
+    width: 50px; 
     height: 50px;
     line-height: 50px; /* Alinea verticalmente el icono dentro del contenedor */
     text-align: center; /* Alinea horizontalmente el icono dentro del contenedor */
@@ -452,6 +491,9 @@ nav {
     color: #942200;
     font-size: 13px;
 }
+/* Pedidos Personalizados: fin sección "Pasos" */
+
+/* Pedidos Personalizados: inicio sección "Sus pedidos + Nuestra magia" */
 .fotospedidosp {
     display: flex;
     flex-direction: column;
@@ -527,3 +569,5 @@ nav {
     text-align: justify;
     padding: 20px;
 }
+/* Pedidos Personalizados: fin sección "Sus pedidos + Nuestra magia" */
+/* fin página "Pedidos Personalizados" */
