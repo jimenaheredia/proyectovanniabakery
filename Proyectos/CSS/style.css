@@ -13,20 +13,6 @@ nav {
     margin: 0 auto 0;
     padding: 0;
 }
-@media (max-width: 1199px) {
-    .menu li:not(.logocontainer) {
-        display: none;
-    }
-    .imagecontainer img {
-        margin-bottom: 20px;
-    }
-}
-@media (min-width: 1200px) {
-    .menu li {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-}
 .menu {
     list-style-type: none;
     margin: 0 0 5px 0;
@@ -56,6 +42,25 @@ nav {
     display:block;
     width: 100px;
     height: auto;
+}
+@media (max-width: 1023px) {
+    .menu li:not(.logocontainer) {
+        display: none;
+    }
+    .imagecontainer img {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .menu li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: 'Anek Devanagari';
+    position: relative;
+    top: -10px;
+    }
 }
 /* fin navbar */
 
@@ -98,10 +103,9 @@ nav {
 
 /* Página principal: inicio sección "Servicios" */
 .section2 {
-    height: 350px;
+    height: 340px;
     background-color: white;
-    padding: 10px;
-    margin-top: 40px;
+    padding: 20px;
 }
 .containerservicios {
     display: flex;
@@ -150,9 +154,8 @@ nav {
 
 /* Página principal: inicio sección "Carta" */
 .section3 {
-    height: 530px;
-    padding: 7px;
-    margin-bottom: 8px;
+    height: 510px;
+    padding: 25px;
 }
 .containercarta1 {
     display: flex;
@@ -190,9 +193,8 @@ nav {
 
 /* Página principal: inicio sección "Contáctanos" */
 .section4 {
-    height: 530px;
-    padding: 7px;
-    margin-bottom: 7px;
+    height: 590px;
+    padding: 40px;
     background-color: white;
 }
 .containercontactanos {
