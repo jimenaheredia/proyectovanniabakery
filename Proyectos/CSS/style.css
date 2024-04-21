@@ -117,12 +117,13 @@ nav {
         margin-bottom: 40px;
     }
     .section1 .vannia {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        max-width: 394px;
     }
 }
-@media (max-width:540px) {
+@media (max-width:560px) {
     .head1 {
         font-size: 25px;
     }
@@ -142,9 +143,12 @@ nav {
         padding: 20px;
     }
     .section1 .vannia {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
+        max-width: 297px;
+    }
+}
+@media (max-width:390px) {
+    .section1 .vannia {
+        max-width: 250px;
     }
 }
 /* Página principal: fin sección "Sobre Nosotros" */
@@ -170,7 +174,7 @@ nav {
     font-size: 30px;
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 .serviciossub {
     flex-grow: 1;
@@ -234,40 +238,63 @@ nav {
 /* Página principal: inicio sección "Carta" */
 .section3 {
     height: 510px;
-    padding: 25px;
 }
 .containercarta1 {
     display: flex;
-    margin-left: 400px;
-    margin-right: 400px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 23px;
+    padding: 20px;
 }
 .pcarta {
     font-family: 'DM Sans';
     font-size: 14px;
     color: #942200;
-    max-width: fit-content;
+    width: 50%;
     text-align: center;
     white-space: pre-wrap;
-    margin-top: 10px;
-    margin-bottom: 20px;
 }
 .containercarta2 {
     display: flex;
-    margin-left: 420px;
-    margin-right: 420px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
     align-items: center;
-    margin-top: 23px;
+    padding: 20px;
 }
 .cartaimg {
     margin-left: 5px;
     margin-right: 5px;
 }
+@media (max-width: 879px) {
+    .containercarta2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section3 {
+        height: 815px;
+    }
+}
+@media (max-width: 560px) {
+    .pcarta {
+        width: 250px;
+        font-size: 12px;
+    }    
+}
+@media (min-width: 691px) and (max-widht:1190px) {
+    .pcarta {
+        width: 520px;
+    }
+}
+@media (min-width: 1191px) {
+    .pcarta {
+        width: 820px;
+    }
+    .containercarta2 {
+        gap: 80px;
+    }
+}
+
 /* Página principal: fin sección "Carta" */
 
 /* Página principal: inicio sección "Contáctanos" */
