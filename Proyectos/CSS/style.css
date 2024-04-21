@@ -1,7 +1,9 @@
-body {
-    background-color: #F8F7DA;
+* {
     margin: 0;
     padding: 0;
+}
+body {
+    background-color: #F8F7DA;
 }
 
 /* inicio navbar */
@@ -299,61 +301,58 @@ nav {
 
 /* Página principal: inicio sección "Contáctanos" */
 .section4 {
-    height: 590px;
-    padding: 40px;
+    height: 620px;
+    padding: 20px;
     background-color: white;
 }
 .containercontactanos {
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
+    flex-direction: row;
     justify-content:center;
     align-items: center;
-    margin-top: 30px;
+    padding: 30px;
+    gap: 80px
 }
 .leftcontactanos {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin-bottom: 30px;
-    margin-right: 100px;
+    justify-content: center;
 }
 .mapa {
     width: 500px;
     height: 300px;
+    padding: 5px;
 }
 .pcontactanos1 {
     color: #493843;
     font-family: 'DM Sans';
     font-size: 14px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    padding: 5px;
 }
 .informaciongeneral {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    gap: 30px;
 }
 .informacion{
-    width: 115px;
-    margin-left: 0;
     display: flex;
     justify-content: flex-start;
 }
 .direc {
-    justify-content: space-between;
-    margin-top: 0;
+    gap: 10px;
+    padding: 5px;
 }
 .fa-location-dot {
-    margin-top: 12px;
-    margin-right: 10px;
     color: #942200;
+    padding: 5px;
 }
 .horario {
-    justify-content: space-around;
-    margin-left: 40px;
+    gap: 10px;
+    padding: 5px;
 }
 .pcontactanos2 {
     font-family: 'DM Sans';
@@ -362,62 +361,45 @@ nav {
 }
 .rightcontactanos {
     display: flex;
-    justify-content: space-between;
-    margin-right: 0;
-    flex-wrap: wrap;
-    width: 448px;
-    height: 350px;
-    margin-bottom: 90px;
+    flex-direction: column;
+    max-width: 450px;
+    justify-content: center;
+}
+.rightcontactanos p {
+    padding: 5px;
 }
 .contactanosredes1 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 66px;
 }
 .whatsapp {
     display: flex;
-    justify-content: space-between;
-    margin-left: 0;
-}
-.whatsapp p {
-    margin-top: 0;
-    margin-left: 10px;
+    flex-direction: row;
 }
 .correo {
     display: flex;
-    justify-content: space-between;
-    margin-left: 77px;
-}
-.correo p {
-    margin-top: 0;
-    margin-left: 10px;
+    flex-direction: row;
 }
 .contactanosredes2 {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    justify-content: row;
+    gap: 47px;
 }
 .instagram {
     display: flex;
-    justify-content: space-between;
-    margin-left: 0;
-}
-.instagram p {
-    margin-top: 0;
-    margin-left: 10px;
+    flex-direction: row;
 }
 .facebook {
     display: flex;
-    justify-content: space-between;
-    margin-left: 60px;
-}
-.facebook p {
-    margin-top: 0;
-    margin-left: 10px;
+    flex-direction: row;
 }
 .rightcontactanos i {
     color: #942200;
     font-size: 18px;
-    margin-bottom: 0;
+    padding: 5px;
+    margin-top: 3px;
 }
 .pcontactanos3 {
     font-family: 'DM Sans';
@@ -425,35 +407,34 @@ nav {
     font-size: 14px;
 }
 .contactanosform {
-    justify-content: space-between;
-    margin-left: 0;
+    align-items: center;
 }
 .formnombreapellido {
-    justify-content: space-between;
     margin-bottom: 15px;
 }
 #email {
-    width: 440px;
+    width: 450px;
     margin-bottom: 15px;
 }
 #mensaje {
-    width: 440px;
+    width: 450px;
     margin-bottom: 15px;
 }
 #nombre {
-    width:213px;
+    width: 222px;
 }
 #apellido {
-    width: 215px;
+    width: 222px;
 }
 .botonenviar {
     background-color: #942200;
     font-family: 'DM Sans';
+    display: block;
+    margin: 0 auto;
     border: none;
     color:#F8F7DA;
     padding: 8px 30px;
     font-size: 10px;
-    margin-left: 175px;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -468,9 +449,8 @@ nav {
     font-family: 'DM Sans';
     color: #942200;
     font-size: 14px;
-    margin-left: 710px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
 }
 /* fin footer */
 
