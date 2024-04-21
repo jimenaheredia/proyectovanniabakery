@@ -175,8 +175,8 @@ nav {
     color: #493843;
     font-size: 30px;
     text-align: center;
-    width: 100%;
     padding: 20px;
+    width: 100%;
 }
 .serviciossub {
     flex-grow: 1;
@@ -648,15 +648,35 @@ nav {
 /* fin página "Postres" */
 
 /* inicio página "Tortas Temáticas" */
+#tortastematicas {
+    padding: 40px 20px 0;
+}
+.py-5 {
+    padding: 25px;
+}
 .nombretortastem {
     font-family: 'Anek Devanagari';
     color: #493843;
     font-size: 16px;
+    text-align: center;
+    padding: 10px;
 }
 .ptortastem {
     font-family: 'DM Sans';
     color: #942200;
     font-size: 14px;
+    text-align: center;
+}
+.col-lg-4 img {
+    width: 250px;
+    height: 300px;
+}
+.col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 /* fin página "Tortas Temáticas" */
 
