@@ -742,6 +742,62 @@ nav {
     padding: 10px;
     max-width: 250px;
 }
+@media (max-width:1148px) {
+    .titulospostres {
+        font-size: 14px;
+    }
+    .ppostres {
+        font-size: 11px;
+    }
+}
+@media (max-width:1090px) {
+    .titulospostres {
+        font-size: 16px;
+    }
+    .ppostres {
+        font-size: 13px;
+    }
+    .listapostres {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:696px) {
+    .listapostres {
+        padding: 20px 30px 30px;
+    }
+}
+@media (max-width:696px) {
+    .listapostres {
+        padding: 20px 20px 30px;
+    }
+    .cardpostres-content {
+        max-width: 180px;
+    }
+    .titulospostres {
+        font-size: 14px;
+    }
+    .ppostres {
+        font-size: 11px;
+    }
+    .cardpostres-image {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 515px) {
+    .listapostres {
+        padding: 20px 20px 30px;
+    }
+    .cardpostres {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardpostres-content {
+        max-width: 180px;
+    }
+}
+
 /* fin página "Postres" */
 
 /* inicio página "Tortas Temáticas" */
