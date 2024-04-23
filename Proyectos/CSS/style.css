@@ -45,23 +45,37 @@ nav {
     width: 100px;
     height: auto;
 }
-@media (max-width: 1023px) {
-    .menu li:not(.logocontainer) {
+#logo2 {
+    max-height: 100px;
+    max-width: 75px;
+}
+.container-fluid {
+    padding: 20px;
+}
+.navbar-toggler-icon {
+    color: #493843;
+}
+.offcanvas-body a{
+    color: #493843;
+    font-family: 'Anek Devanagari';
+}
+.btn-close {
+    color: #493843;
+}
+@media (min-width: 1250px) {
+    .bg-body-tertiary {
+            display: none;
+        }
+}
+@media (max-width: 1250px) {
+    .navgrande {
         display: none;
     }
-    .imagecontainer img {
-        margin-bottom: 20px;
-    }
 }
-@media (min-width: 1024px) and (max-width: 1400px) {
-    .menu li{
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    font-family: 'Anek Devanagari';
-    position: relative;
-    top: -10px;
+@media (min-width: 561px) {
+    #logo2 {
+        max-height: 120px;
+        max-width: 95px;
     }
 }
 /* fin navbar */
