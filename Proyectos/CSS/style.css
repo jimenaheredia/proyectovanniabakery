@@ -850,9 +850,9 @@ nav {
 /* inicio página "Pedidos Personalizados" */
 /* Pedidos Personalizados: inicio sección "Pasos" */
 .containerpedidosp {
-    height: 380px;
+    height: auto;
     background-color:#F8F7DA;
-    padding: 30px 40px 30px;
+    padding: 30px 40px 20px;
 }
 .h3pedidosp {
     font-family: 'Anek Devanagari';
@@ -887,7 +887,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 200px;
+    max-width: 250px;
 }
 .paso2 {
     display: flex;
@@ -896,7 +896,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 200px;
+    max-width: 250px;
 }
 .paso3 {
     display: flex;
@@ -905,7 +905,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 200px;
+    max-width: 250px;
 }
 .paso4 {
     display: flex;
@@ -914,7 +914,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 200px;
+    max-width: 250px;
 }
 .containerpasos i {
     color: #F8F7DA;
