@@ -254,7 +254,8 @@ nav {
 
 /* Página principal: inicio sección "Carta" */
 .section3 {
-    height: 510px;
+    height: auto;
+    margin-bottom: 20px;
 }
 .containercarta1 {
     display: flex;
@@ -289,7 +290,7 @@ nav {
         flex-direction: column;
     }
     .section3 {
-        height: 815px;
+        height: auto;
     }
 }
 @media (max-width: 560px) {
