@@ -4,10 +4,16 @@
   padding: 0;
 }
 
-body {
-  background-color: #F8F7DA;
+/*footer */
+.footer {
+  font-family: "DM Sans";
+  color: #942200;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
 }
 
+/* fin footer */
 /* inicio navbar */
 nav {
   background-color: white;
@@ -24,7 +30,6 @@ nav {
   padding: 0;
   text-align: center;
 }
-
 .menu li {
   display: inline-block;
   margin-left: 40px;
@@ -34,17 +39,14 @@ nav {
   position: relative;
   top: -10px;
 }
-
-.menu li:nth-last-child {
+.menu li nth-last-child {
   margin-right: 0;
 }
-
 .menu li a {
   display: block;
   text-decoration: none;
   color: #493843;
 }
-
 .menu li .imagecontainer img {
   position: relative;
   top: 35px;
@@ -92,12 +94,15 @@ nav {
   }
 }
 /* fin navbar */
+body {
+  background-color: #F8F7DA;
+}
+
 /* inicio página principal (index) */
 .section0 {
   max-width: 100%;
   overflow: hidden;
 }
-
 .section0 img {
   width: 100%;
   height: auto;
@@ -110,6 +115,11 @@ nav {
   align-items: center;
   height: 500px;
   margin-top: 40px;
+}
+.section1 .vannia {
+  float: right;
+  max-width: calc(50% - 40px); /* Ajusta el ancho máximo de la imagen */
+  margin-left: 100px;
 }
 
 .leftcontent {
@@ -133,12 +143,6 @@ nav {
   max-width: 400px;
   text-align: justify;
   white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
-}
-
-.section1 .vannia {
-  float: right;
-  max-width: calc(50% - 40px); /* Ajusta el ancho máximo de la imagen */
-  margin-left: 100px;
 }
 
 @media (max-width: 1023px) {
@@ -218,19 +222,18 @@ nav {
   margin: 20px 10px 20px 10px;
   text-align: center;
 }
+.serviciossub i {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #493843;
+}
 
 .head3 {
   font-family: "Anek Devanagari";
   color: #493843;
   font-size: 17px;
   margin-bottom: 5px;
-}
-
-.serviciossub i {
-  display: block;
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #493843;
 }
 
 .pservicios {
@@ -418,7 +421,6 @@ nav {
   max-width: 450px;
   justify-content: center;
 }
-
 .rightcontactanos p {
   padding: 5px;
 }
@@ -507,8 +509,7 @@ nav {
   border-radius: 3px;
   cursor: pointer;
 }
-
-.botonenviar:hover {
+.botonenviar :hover {
   background-color: #BF7256;
 }
 
@@ -608,6 +609,12 @@ nav {
     max-width: 250px;
     padding: 0;
   }
+  .rightcontactanos i {
+    font-size: 12px;
+  }
+  .rightcontactanos p {
+    font-size: 12px;
+  }
   .mapa {
     width: 250px;
     height: 150px;
@@ -631,12 +638,6 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 0;
-  }
-  .rightcontactanos i {
-    font-size: 12px;
-  }
-  .rightcontactanos p {
-    font-size: 12px;
   }
   #email {
     width: 250px;
@@ -663,110 +664,227 @@ nav {
 }
 /* Página principal: fin sección "Contáctanos" */
 /* fin página principal (index) */
-/*footer */
-.footer {
-  font-family: "DM Sans";
-  color: #942200;
-  font-size: 14px;
-  text-align: center;
-  padding: 20px;
+/* inicio página "Pedidos Personalizados" */
+/* Pedidos Personalizados: inicio sección "Pasos" */
+.containerpedidosp {
+  height: auto;
+  background-color: #F8F7DA;
+  padding: 30px 40px 20px;
 }
 
-/* fin footer */
-/* inicio página "Promociones del mes" */
-/* Promociones del mes: inicio sección "Promociones del mes" */
-#promocionesdelmes {
-  padding: 30px 20px 0;
-}
-
-.h3promo {
+.h3pedidosp {
   font-family: "Anek Devanagari";
   color: #493843;
-  font-size: 25px;
-  padding: 40px;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding: 15px;
 }
 
-.imagenpromodelmes img {
-  width: 100%;
-  height: auto;
-}
-
-/* Promociones del mes: fin sección "Promociones del mes" */
-/* Promociones del mes: inicio sección "¡Felices Pascuas con Vannia!" */
-.seccion2promociones {
-  background-color: white;
-}
-
-.ppromo {
+.ppedidos1 {
   font-family: "DM Sans";
   color: #942200;
   font-size: 14px;
+  display: flex;
+  max-width: 650px;
   text-align: center;
+  white-space: pre-wrap;
+  margin: auto;
+}
+
+.containerpasos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px 10px;
+}
+.containerpasos i {
+  color: #F8F7DA;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background-color: #493843;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px; /* Alinea verticalmente el icono dentro del contenedor */
+  text-align: center; /* Alinea horizontalmente el icono dentro del contenedor */
+  border-radius: 50%;
+}
+
+.paso1 {
+  display: flex;
   padding: 20px;
-  margin-bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
 }
 
-.col-lg-6 img {
-  width: 450px;
-  height: 350px;
+.paso2 {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
 }
 
-.col-lg-12 img {
-  width: 450px;
-  height: 350px;
+.paso3 {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
 }
 
-.col-lg-6 {
+.paso4 {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+}
+
+.pasospedidosp {
+  font-family: "Anek Devanagari";
+  color: #493843;
+  font-size: 16px;
+}
+
+.ppedidos2 {
+  font-family: "DM Sans";
+  color: #942200;
+  font-size: 13px;
+}
+
+@media (max-width: 1138px) {
+  .ppedidos2 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 926px) {
+  .containerpasos {
+    display: flex;
+    flex-direction: column;
+  }
+  .ppedidos2 {
+    font-size: 13px;
+  }
+  .containerpedidosp {
+    height: auto;
+  }
+}
+/* Pedidos Personalizados: fin sección "Pasos" */
+/* Pedidos Personalizados: inicio sección "Sus pedidos + Nuestra magia" */
+.containerimgpp {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  background-color: white;
   padding: 30px;
 }
+.containerimgpp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.col-lg-12 {
+.containercard {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 30px 20px 20px;
+}
+
+.cardizq {
+  width: 450px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  transition: 0.5s;
+  position: relative;
 }
 
-@media (max-width: 380px) {
-  .col-lg-6 img {
-    width: 250px;
-    height: 150px;
-  }
-  .col-lg-12 img {
-    width: 250px;
-    height: 150px;
-  }
-  .col-lg-6 {
-    padding: 10px;
-  }
-  .col-lg-12 {
-    padding: 10px;
+.cardder {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+  position: relative;
+}
+
+.cardppcontent {
+  background-color: rgba(73, 56, 67, 0.7725490196);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  transition: 0.5s;
+  opacity: 0;
+}
+.cardppcontent:hover {
+  opacity: 1;
+}
+
+.hcardpp {
+  font-family: "Anek Devanagari";
+  color: #F8F7DA;
+  font-size: 23px;
+  text-align: left;
+  padding: 20px 20px 5px;
+}
+
+.pcardpp {
+  font-family: "DM Sans";
+  color: #F8F7DA;
+  font-size: 13px;
+  text-align: justify;
+  padding: 0 20px 20px;
+}
+
+@media (max-width: 1075px) {
+  .containercard {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 }
-@media (min-width: 380px) and (max-width: 528px) {
-  .col-lg-6 img {
-    width: 360px;
-    height: 260px;
+@media (max-width: 567px) {
+  .cardizq {
+    width: 350px;
+    height: 350px;
   }
-  .col-lg-12 img {
-    width: 360px;
-    height: 260px;
-  }
-  .col-lg-6 {
-    padding: 10px;
-  }
-  .col-lg-12 {
-    padding: 10px;
+  .cardder {
+    width: 350px;
+    height: 350px;
   }
 }
-/* Promociones del mes: fin sección "¡Felices Pascuas con Vannia!" */
-/* fin página "Promociones del mes" */
+@media (max-width: 389px) {
+  .cardizq {
+    width: 280px;
+    height: 280px;
+  }
+  .cardder {
+    width: 280px;
+    height: 280px;
+  }
+}
+/* Pedidos Personalizados: fin sección "Sus pedidos + Nuestra magia" */
+/* fin página "Pedidos Personalizados" */
 /* inicio página "Postres" */
 .h3postres {
   font-family: "Anek Devanagari";
@@ -812,7 +930,6 @@ nav {
   flex-direction: row;
   padding: 20px;
 }
-
 .cardpostres img {
   width: 180px;
   height: 180px;
@@ -883,6 +1000,98 @@ nav {
   }
 }
 /* fin página "Postres" */
+/* inicio página "Promociones del mes" */
+/* Promociones del mes: inicio sección "Promociones del mes" */
+#promocionesdelmes {
+  padding: 30px 20px 0;
+}
+
+.h3promo {
+  font-family: "Anek Devanagari";
+  color: #493843;
+  font-size: 25px;
+  padding: 40px;
+  text-align: center;
+}
+
+.imagenpromodelmes img {
+  width: 100%;
+  height: auto;
+}
+
+/* Promociones del mes: fin sección "Promociones del mes" */
+/* Promociones del mes: inicio sección "¡Felices Pascuas con Vannia!" */
+.seccion2promociones {
+  background-color: white;
+}
+
+.ppromo {
+  font-family: "DM Sans";
+  color: #942200;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.col-lg-6 img {
+  width: 450px;
+  height: 350px;
+}
+
+.col-lg-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.col-lg-12 img {
+  width: 450px;
+  height: 350px;
+}
+
+@media (max-width: 380px) {
+  .col-lg-6 {
+    padding: 10px;
+  }
+  .col-lg-6 img {
+    width: 250px;
+    height: 150px;
+  }
+  .col-lg-12 {
+    padding: 10px;
+  }
+  .col-lg-12 img {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (min-width: 380px) and (max-width: 528px) {
+  .col-lg-6 {
+    padding: 10px;
+  }
+  .col-lg-6 img {
+    width: 360px;
+    height: 260px;
+  }
+  .col-lg-12 {
+    padding: 10px;
+  }
+  .col-lg-12 img {
+    width: 360px;
+    height: 260px;
+  }
+}
+/* Promociones del mes: fin sección "¡Felices Pascuas con Vannia!" */
+/* fin página "Promociones del mes" */
 /* inicio página "Tortas Temáticas" */
 #tortastematicas {
   padding: 40px 20px 0;
@@ -911,7 +1120,6 @@ nav {
   width: 250px;
   height: 300px;
 }
-
 .containerimgtt img {
   width: 100%;
   height: 100%;
@@ -927,229 +1135,5 @@ nav {
 }
 
 /* fin página "Tortas Temáticas" */
-/* inicio página "Pedidos Personalizados" */
-/* Pedidos Personalizados: inicio sección "Pasos" */
-.containerpedidosp {
-  height: auto;
-  background-color: #F8F7DA;
-  padding: 30px 40px 20px;
-}
-
-.h3pedidosp {
-  font-family: "Anek Devanagari";
-  color: #493843;
-  font-size: 23px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 15px;
-}
-
-.ppedidos1 {
-  font-family: "DM Sans";
-  color: #942200;
-  font-size: 14px;
-  display: flex;
-  max-width: 650px;
-  text-align: center;
-  white-space: pre-wrap;
-  margin: auto;
-}
-
-.containerpasos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 30px 20px 10px;
-}
-
-.paso1 {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 250px;
-}
-
-.paso2 {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 250px;
-}
-
-.paso3 {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 250px;
-}
-
-.paso4 {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 250px;
-}
-
-.containerpasos i {
-  color: #F8F7DA;
-  font-size: 15px;
-  margin-bottom: 10px;
-  background-color: #493843;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px; /* Alinea verticalmente el icono dentro del contenedor */
-  text-align: center; /* Alinea horizontalmente el icono dentro del contenedor */
-  border-radius: 50%;
-}
-
-.pasospedidosp {
-  font-family: "Anek Devanagari";
-  color: #493843;
-  font-size: 16px;
-}
-
-.ppedidos2 {
-  font-family: "DM Sans";
-  color: #942200;
-  font-size: 13px;
-}
-
-@media (max-width: 1138px) {
-  .ppedidos2 {
-    font-size: 11px;
-  }
-}
-@media (max-width: 926px) {
-  .containerpasos {
-    display: flex;
-    flex-direction: column;
-  }
-  .ppedidos2 {
-    font-size: 13px;
-  }
-  .containerpedidosp {
-    height: auto;
-  }
-}
-/* Pedidos Personalizados: fin sección "Pasos" */
-/* Pedidos Personalizados: inicio sección "Sus pedidos + Nuestra magia" */
-.containerimgpp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: white;
-  padding: 30px;
-}
-
-.containercard {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-  padding: 30px 20px 20px;
-}
-
-.cardizq {
-  width: 450px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 0.5s;
-  position: relative;
-}
-
-.cardder {
-  width: 450px;
-  height: 450px;
-  display: flex;
-  justify-content: space-between;
-  transition: 0.5s;
-  position: relative;
-}
-
-.containerimgpp img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.cardppcontent {
-  background-color: rgba(73, 56, 67, 0.7960784314);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  transition: 0.5s;
-  opacity: 0;
-}
-
-.cardppcontent:hover {
-  opacity: 1;
-}
-
-.hcardpp {
-  font-family: "Anek Devanagari";
-  color: #F8F7DA;
-  font-size: 23px;
-  text-align: left;
-  padding: 20px 20px 5px;
-}
-
-.pcardpp {
-  font-family: "DM Sans";
-  color: #F8F7DA;
-  font-size: 13px;
-  text-align: justify;
-  padding: 0 20px 20px;
-}
-
-@media (max-width: 1075px) {
-  .containercard {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-}
-@media (max-width: 567px) {
-  .cardizq {
-    width: 350px;
-    height: 350px;
-  }
-  .cardder {
-    width: 350px;
-    height: 350px;
-  }
-}
-@media (max-width: 389px) {
-  .cardizq {
-    width: 280px;
-    height: 280px;
-  }
-  .cardder {
-    width: 280px;
-    height: 280px;
-  }
-}
-/* Pedidos Personalizados: fin sección "Sus pedidos + Nuestra magia" */
-/* fin página "Pedidos Personalizados" */
 
 /*# sourceMappingURL=style.css.map */

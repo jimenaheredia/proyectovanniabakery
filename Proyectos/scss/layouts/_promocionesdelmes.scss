@@ -1,0 +1,91 @@
+/* inicio página "Promociones del mes" */
+
+/* Promociones del mes: inicio sección "Promociones del mes" */
+#promocionesdelmes {
+    padding: 30px 20px 0;
+}
+.h3promo {
+    font-family: 'Anek Devanagari';
+    color: $morado;
+    font-size: 25px;
+    padding: 40px;
+    text-align: center;
+}
+.imagenpromodelmes img{
+    width: 100%;
+    height: auto;    
+}
+/* Promociones del mes: fin sección "Promociones del mes" */
+
+/* Promociones del mes: inicio sección "¡Felices Pascuas con Vannia!" */
+.seccion2promociones {
+    background-color: $blanco;
+}
+.ppromo {
+    font-family: 'DM Sans';
+    color: $cereza;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+.col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    img {
+        width: 450px;
+        height: 350px;
+    }
+}
+.col-lg-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+        width: 450px;
+        height: 350px;
+    }
+}
+@media (max-width:380px) {
+    .col-lg-6 {
+        padding: 10px;
+        img {
+            width: 250px;
+            height: 150px;
+        }
+    }
+    .col-lg-12 {
+        padding: 10px;
+        img {
+            width: 250px;
+            height: 150px;
+        }
+    }
+}
+@media (min-width:380px) and (max-width:528px) {
+    .col-lg-6 {
+        padding: 10px;
+
+        img {
+            width: 360px;
+            height: 260px;
+        }
+    }
+    .col-lg-12 {
+        padding: 10px;
+
+        img {
+            width: 360px;
+            height: 260px;
+        }
+    }
+}
+/* Promociones del mes: fin sección "¡Felices Pascuas con Vannia!" */
+/* fin página "Promociones del mes" */

@@ -1,0 +1,38 @@
+/* inicio página "Tortas Temáticas" */
+#tortastematicas {
+    padding: 40px 20px 0;
+}
+.py-5 {
+    padding: 25px;
+}
+.nombretortastem {
+    font-family: 'Anek Devanagari';
+    color: $morado;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+.ptortastem {
+    font-family: 'DM Sans';
+    color: $cereza;
+    font-size: 14px;
+    text-align: center;
+}
+.containerimgtt {
+    width: 250px;
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* fin página "Tortas Temáticas" */
