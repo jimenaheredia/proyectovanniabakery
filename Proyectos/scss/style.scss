@@ -1,14 +1,19 @@
+$blanco: white;
+$rosado: #F8F7DA;
+$morado: #493843;
+$cereza: #942200;
+
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: #F8F7DA;
+    background-color: $rosado;
 }
 
 /* inicio navbar */
 nav {
-    background-color: white;
+    background-color: $white;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -57,14 +62,14 @@ nav {
     padding: 20px;
 }
 .navbar-toggler-icon {
-    color: #493843;
+    color: $morado;
 }
 .offcanvas-body a{
-    color: #493843;
+    color: $morado;
     font-family: 'Anek Devanagari';
 }
 .btn-close {
-    color: #493843;
+    color: $morado;
 }
 @media (min-width: 1250px) {
     .bg-body-tertiary {
@@ -124,7 +129,7 @@ nav {
 .pnosotros {
     font-family: 'DM Sans';
     font-size: 15px;
-    color:#942200;
+    color: $cereza;
     max-width: 400px; 
     text-align: justify; 
     white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
@@ -178,7 +183,7 @@ nav {
 /* Página principal: inicio sección "Servicios" */
 .section2 {
     height: 340px;
-    background-color: white;
+    background-color: $blanco;
     padding: 20px;
 }
 .containerservicios {
@@ -192,7 +197,7 @@ nav {
 }
 .head2 {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 30px;
     text-align: center;
     padding: 20px;
@@ -208,19 +213,19 @@ nav {
         display: block;
         font-size: 30px;
         margin-bottom: 10px;
-        color: #493843;
+        color: $morado;
     }
 }
 .head3 {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 17px;
     margin-bottom: 5px;
 }
 .pservicios {
     font-family: 'DM Sans';
     font-size: 14px;
-    color: #942200;
+    color: $cereza;
     max-width: 250px; 
     text-align: center;
     white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
@@ -274,7 +279,7 @@ nav {
 .pcarta {
     font-family: 'DM Sans';
     font-size: 14px;
-    color: #942200;
+    color: $cereza;
     width: 50%;
     text-align: center;
     white-space: pre-wrap;
@@ -326,7 +331,7 @@ nav {
 .section4 {
     height: 620px;
     padding: 20px;
-    background-color: white;
+    background-color: $blanco;
 }
 .containercontactanos {
     display: flex;
@@ -348,7 +353,7 @@ nav {
     padding: 5px;
 }
 .pcontactanos1 {
-    color: #493843;
+    color: $morado;
     font-family: 'DM Sans';
     font-size: 14px;
     font-weight: bold;
@@ -370,7 +375,7 @@ nav {
     padding: 5px;
 }
 .fa-location-dot {
-    color: #942200;
+    color: $cereza;
     padding: 5px;
 }
 .horario {
@@ -379,7 +384,7 @@ nav {
 }
 .pcontactanos2 {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 12px;
 }
 .rightcontactanos {
@@ -420,14 +425,14 @@ nav {
     flex-direction: row;
 }
 .rightcontactanos i {
-    color: #942200;
+    color: $cereza;
     font-size: 18px;
     padding: 5px;
     margin-top: 3px;
 }
 .pcontactanos3 {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 14px;
 }
 .contactanosform {
@@ -451,12 +456,12 @@ nav {
     width: 222px;
 }
 .botonenviar {
-    background-color: #942200;
+    background-color: $cereza;
     font-family: 'DM Sans';
     display: block;
     margin: 0 auto;
     border: none;
-    color:#F8F7DA;
+    color: $rosado;
     padding: 8px 30px;
     font-size: 10px;
     border-radius: 3px;
@@ -624,7 +629,7 @@ nav {
 /*footer */
 .footer {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 14px;
     text-align: center;
     padding: 20px;
@@ -639,7 +644,7 @@ nav {
 }
 .h3promo {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 25px;
     padding: 40px;
     text-align: center;
@@ -652,11 +657,11 @@ nav {
 
 /* Promociones del mes: inicio sección "¡Felices Pascuas con Vannia!" */
 .seccion2promociones {
-    background-color: white;
+    background-color: $blanco;
 }
 .ppromo {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 14px;
     text-align: center;
     padding: 20px;
@@ -726,19 +731,19 @@ nav {
 /* inicio página "Postres" */
 .h3postres {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 23px;
 }
 .titulospostres {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 16px;
     text-align: left;
     width: 100%;
 }
 .ppostres {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 13px;
     text-align: justify;
     width: 100%;
@@ -747,7 +752,7 @@ nav {
     display: flex;
     flex-direction: row;
     padding: 20px 100px 30px;
-    background-color: white;
+    background-color: $blanco;
     gap: 50px;
 }
 .antojos {
@@ -843,14 +848,14 @@ nav {
 }
 .nombretortastem {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 16px;
     text-align: center;
     padding: 10px;
 }
 .ptortastem {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 14px;
     text-align: center;
 }
@@ -877,12 +882,12 @@ nav {
 /* Pedidos Personalizados: inicio sección "Pasos" */
 .containerpedidosp {
     height: auto;
-    background-color:#F8F7DA;
+    background-color: $rosado;
     padding: 30px 40px 20px;
 }
 .h3pedidosp {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 23px;
     display: flex;
     justify-content: center;
@@ -891,7 +896,7 @@ nav {
 }
 .ppedidos1 {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 14px;
     display:flex;
     max-width: 650px; 
@@ -907,10 +912,10 @@ nav {
     padding: 30px 20px 10px;
 
     i {
-        color: #F8F7DA;
+        color: $rosado;
         font-size: 15px;
         margin-bottom: 10px;
-        background-color: #493843;
+        background-color: $morado;
         display: inline-block;
         width: 50px; 
         height: 50px;
@@ -957,12 +962,12 @@ nav {
 }
 .pasospedidosp {
     font-family: 'Anek Devanagari';
-    color: #493843;
+    color: $morado;
     font-size: 16px;
 }
 .ppedidos2 {
     font-family: 'DM Sans';
-    color: #942200;
+    color: $cereza;
     font-size: 13px;
 }
 @media (max-width:1138px) {
@@ -992,7 +997,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: white;
+    background-color: $blanco;
     padding: 30px;
 
     img {
@@ -1025,7 +1030,7 @@ nav {
     position: relative;
 }
 .cardppcontent {
-    background-color:#493843cb;
+    background-color: $morado;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1040,14 +1045,14 @@ nav {
 }
 .hcardpp {
     font-family: 'Anek Devanagari';
-    color:#F8F7DA;
+    color: $rosado;
     font-size: 23px;
     text-align: left;
     padding: 20px 20px 5px;
 }
 .pcardpp {
     font-family: 'DM Sans';
-    color:#F8F7DA;
+    color: $rosado;
     font-size: 13px;
     text-align: justify;
     padding: 0 20px 20px;
