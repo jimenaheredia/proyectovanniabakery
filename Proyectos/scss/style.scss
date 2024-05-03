@@ -20,8 +20,8 @@ nav {
     margin: 0 0 5px 0;
     padding: 0;
     text-align: center;
-}
-.menu li{
+
+    li{
     display:inline-block;
     margin-left: 40px;
     margin-right: 40px;
@@ -29,21 +29,25 @@ nav {
     font-family: 'Anek Devanagari';
     position: relative;
     top: -10px;
-}
-.menu li:nth-last-child {
-    margin-right: 0;
-}
-.menu li a {
+
+    nth-last-child {
+        margin-right: 0;
+
+    a {
     display: block;
     text-decoration: none;
     color: #493843;
-}
-.menu li .imagecontainer img {
-    position: relative;
-    top: 35px;
-    display:block;
-    width: 100px;
-    height: auto;
+
+    .imagecontainer img {
+        position: relative;
+        top: 35px;
+        display:block;
+        width: 100px;
+        height: auto;
+    }
+    }
+    }
+    }
 }
 #logo2 {
     max-height: 100px;
@@ -84,10 +88,11 @@ nav {
 .section0 {
     max-width: 100%; 
     overflow: hidden;
-}
-.section0 img {
-    width: 100%;
-    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Página principal: inicio sección "Sobre Nosotros" */
@@ -96,7 +101,13 @@ nav {
     justify-content: center;
     align-items: center;
     height: 500px;
-    margin-top: 40px; 
+    margin-top: 40px;
+    
+    .vannia {
+        float: right;
+        max-width: calc(50% - 40px); /* Ajusta el ancho máximo de la imagen */
+        margin-left: 100px; 
+    }
 }
 .leftcontent {
     float: left;
@@ -117,11 +128,6 @@ nav {
     max-width: 400px; 
     text-align: justify; 
     white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
-}
-.section1 .vannia {
-    float: right;
-    max-width: calc(50% - 40px); /* Ajusta el ancho máximo de la imagen */
-    margin-left: 100px; 
 }
 @media (max-width: 1023px) {
     .section1 {
@@ -197,18 +203,19 @@ nav {
     flex-grow: 1;
     margin: 20px 10px 20px 10px;
     text-align: center;
+
+    i {
+        display: block;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #493843;
+    }
 }
 .head3 {
     font-family: 'Anek Devanagari';
     color: #493843;
     font-size: 17px;
     margin-bottom: 5px;
-}
-.serviciossub i {
-    display: block;
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: #493843;
 }
 .pservicios {
     font-family: 'DM Sans';
@@ -380,9 +387,10 @@ nav {
     flex-direction: column;
     max-width: 450px;
     justify-content: center;
-}
-.rightcontactanos p {
-    padding: 5px;
+
+    p {
+        padding: 5px;
+    }
 }
 .contactanosredes1 {
     display: flex;
@@ -453,9 +461,10 @@ nav {
     font-size: 10px;
     border-radius: 3px;
     cursor: pointer;
-}
-.botonenviar:hover {
-    background-color: #BF7256;
+
+    :hover {
+        background-color: #BF7256;
+    }
 }
 @media (max-width:1071px) {
     .containercontactanos {
@@ -554,6 +563,13 @@ nav {
     .rightcontactanos {
         max-width: 250px;
         padding:0;
+        
+        i {
+            font-size: 12px;
+        }
+        p {
+            font-size: 12px;
+        }
     }
     .mapa {
         width: 250px;
@@ -578,12 +594,6 @@ nav {
         display: flex;
         flex-direction: column;
         gap: 0;
-    }
-    .rightcontactanos i {
-        font-size: 12px;
-    }
-    .rightcontactanos p {
-        font-size: 12px;
     }
     #email {
         width: 250px;
@@ -652,20 +662,17 @@ nav {
     padding: 20px;
     margin-bottom: 0;
 }
-.col-lg-6 img {
-    width: 450px;
-    height: 350px;
-}
-.col-lg-12 img {
-    width: 450px;
-    height: 350px;
-}
 .col-lg-6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
+
+    img {
+        width: 450px;
+        height: 350px;
+    }
 }
 .col-lg-12 {
     display: flex;
@@ -673,37 +680,44 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 20px;
+
+    img {
+        width: 450px;
+        height: 350px;
+    }
 }
 @media (max-width:380px) {
-    .col-lg-6 img {
-        width: 250px;
-        height: 150px;
-    }
-    .col-lg-12 img {
-        width: 250px;
-        height: 150px;
-    }
     .col-lg-6 {
         padding: 10px;
+        img {
+            width: 250px;
+            height: 150px;
+        }
     }
     .col-lg-12 {
         padding: 10px;
+        img {
+            width: 250px;
+            height: 150px;
+        }
     }
 }
 @media (min-width:380px) and (max-width:528px) {
-    .col-lg-6 img {
-        width: 360px;
-        height: 260px;
-    }
-    .col-lg-12 img {
-        width: 360px;
-        height: 260px;
-    }
     .col-lg-6 {
         padding: 10px;
+
+        img {
+            width: 360px;
+            height: 260px;
+        }
     }
     .col-lg-12 {
         padding: 10px;
+
+        img {
+            width: 360px;
+            height: 260px;
+        }
     }
 }
 /* Promociones del mes: fin sección "¡Felices Pascuas con Vannia!" */
@@ -748,10 +762,11 @@ nav {
     display: flex;
     flex-direction: row;
     padding: 20px;
-}
-.cardpostres img {
-    width: 180px;
-    height: 180px;
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
 }
 .cardpostres-content {
     display: flex;
@@ -842,11 +857,12 @@ nav {
 .containerimgtt {
     width: 250px;
     height: 300px;
-}
-.containerimgtt img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .col-lg-4 {
     display: flex;
@@ -889,6 +905,19 @@ nav {
     align-items: center;
     gap: 20px;
     padding: 30px 20px 10px;
+
+    i {
+        color: #F8F7DA;
+        font-size: 15px;
+        margin-bottom: 10px;
+        background-color: #493843;
+        display: inline-block;
+        width: 50px; 
+        height: 50px;
+        line-height: 50px; /* Alinea verticalmente el icono dentro del contenedor */
+        text-align: center; /* Alinea horizontalmente el icono dentro del contenedor */
+        border-radius: 50%;
+    }
 }
 .paso1 {
     display: flex;
@@ -925,18 +954,6 @@ nav {
     align-items: center;
     text-align: center;
     max-width: 250px;
-}
-.containerpasos i {
-    color: #F8F7DA;
-    font-size: 15px;
-    margin-bottom: 10px;
-    background-color: #493843;
-    display: inline-block;
-    width: 50px; 
-    height: 50px;
-    line-height: 50px; /* Alinea verticalmente el icono dentro del contenedor */
-    text-align: center; /* Alinea horizontalmente el icono dentro del contenedor */
-    border-radius: 50%;
 }
 .pasospedidosp {
     font-family: 'Anek Devanagari';
@@ -977,6 +994,12 @@ nav {
     gap: 20px;
     background-color: white;
     padding: 30px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .containercard {
     display: flex;
@@ -1001,11 +1024,6 @@ nav {
     transition: 0.5s;
     position: relative;
 }
-.containerimgpp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .cardppcontent {
     background-color:#493843cb;
     width: 100%;
@@ -1016,9 +1034,9 @@ nav {
     flex-direction: column;
     transition: 0.5s;
     opacity: 0;
-}
-.cardppcontent:hover {
-    opacity: 1;
+    :hover {
+        opacity: 1;
+    }
 }
 .hcardpp {
     font-family: 'Anek Devanagari';
