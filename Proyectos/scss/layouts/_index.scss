@@ -31,19 +31,19 @@ body {
     max-width: 400px; 
     margin-right: 20px; 
 }
+@mixin sobrenosp ($fontfam, $colour, $fontsize, $textalign) {
+    font-family: $fontfam;
+    color: $colour;
+    font-size: $fontsize;
+    text-align: $textalign;
+}
 .head1 {
-    font-family: 'Anek Devanagari';
-    color: #493843;
-    font-size: 35px;
-    margin-top: 0;/* Elimina el margen superior del encabezado */
-    text-align: center; 
+    @include sobrenosp($titulo, $morado, 35px, center);
+    margin-top: 0;
 }
 .pnosotros {
-    font-family: 'DM Sans';
-    font-size: 15px;
-    color: $cereza;
+    @include sobrenosp($parrafo, $cereza, 15px, justify);
     max-width: 400px; 
-    text-align: justify; 
     white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
 }
 @media (max-width: 1023px) {
@@ -107,10 +107,13 @@ body {
     flex-wrap: wrap;
     margin-top: 23px;
 }
+@mixin serviciosp ($fontf, $colour, $fonts) {
+    font-family: $fontf;
+    color: $colour;
+    font-size: $fonts;
+}
 .head2 {
-    font-family: 'Anek Devanagari';
-    color: $morado;
-    font-size: 30px;
+    @include serviciosp($titulo, $morado, 30px);
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -129,15 +132,11 @@ body {
     }
 }
 .head3 {
-    font-family: 'Anek Devanagari';
-    color: $morado;
-    font-size: 17px;
+    @include serviciosp($titulo, $morado, 17px);
     margin-bottom: 5px;
 }
 .pservicios {
-    font-family: 'DM Sans';
-    font-size: 14px;
-    color: $cereza;
+    @include serviciosp($parrafo, $cereza, 14px);
     max-width: 250px; 
     text-align: center;
     white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
@@ -181,15 +180,18 @@ body {
     height: auto;
     margin-bottom: 20px;
 }
-.containercarta1 {
+@mixin contcarta ($flexd, $justify, $align, $pad) {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    flex-direction: $flexd;
+    justify-content: $justify;
+    align-items: $align;
+    padding: $pad;
+}
+.containercarta1 {
+    @include contcarta(column, center, center, 20px);
 }
 .pcarta {
-    font-family: 'DM Sans';
+    font-family: $parrafo;
     font-size: 14px;
     color: $cereza;
     width: 50%;
@@ -197,12 +199,8 @@ body {
     white-space: pre-wrap;
 }
 .containercarta2 {
-    display: flex;
-    flex-direction: row;
+    @include contcarta(row, center, center, 20px);
     gap: 60px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
 }
 .cartaimg {
     margin-left: 5px;
@@ -245,37 +243,43 @@ body {
     padding: 20px;
     background-color: $blanco;
 }
-.containercontactanos {
+@mixin contcontact ($flexd, $justify, $align) {
     display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
+    flex-direction: $flexd;
+    justify-content: $justify;
+    align-items: $align;
+}
+.containercontactanos {
+    @include contcontact(row, center, center);
     padding: 30px;
     gap: 80px
 }
-.leftcontactanos {
+@mixin cont2contact ($flexd, $maxw, $justify) {
     display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    justify-content: center;
+    flex-direction: $flexd;
+    max-width: $maxw;
+    justify-content: $justify;
+}
+.leftcontactanos {
+    @include cont2contact(column, 500px, center);
 }
 .mapa {
     width: 500px;
     height: 300px;
     padding: 5px;
 }
+@mixin pcontact ($fontf, $colour, $fonts) {
+    font-family: $fontf;
+    color: $colour;
+    font-size: $fonts;
+}
 .pcontactanos1 {
-    color: $morado;
-    font-family: 'DM Sans';
-    font-size: 14px;
+    @include pcontact($parrafo, $morado, 14px);
     font-weight: bold;
     padding: 5px;
 }
 .informaciongeneral {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    @include contcontact(row, flex-start, center);
     gap: 30px;
 }
 .informacion{
@@ -291,61 +295,52 @@ body {
     padding: 5px;
 }
 .horario {
-    gap: 10px;
-    padding: 5px;
+    @extend .direc;
 }
 .pcontactanos2 {
-    font-family: 'DM Sans';
-    color: $cereza;
-    font-size: 12px;
+    @include pcontact($parrafo, $cereza, 12px);
 }
 .rightcontactanos {
-    display: flex;
-    flex-direction: column;
-    max-width: 450px;
-    justify-content: center;
+    @include cont2contact(column, 450px, center);
 
     p {
         padding: 5px;
     }
+
+    i {
+        color: $cereza;
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 3px;
+    }
+}
+@mixin cont3contact ($flexd, $gap) {
+    display: flex;
+    flex-direction: $flexd;
+    gap: $gap;
 }
 .contactanosredes1 {
-    display: flex;
-    flex-direction: row;
+    @include cont3contact(row, 66px);
     justify-content: flex-start;
-    gap: 66px;
 }
 .whatsapp {
     display: flex;
     flex-direction: row;
 }
 .correo {
-    display: flex;
-    flex-direction: row;
+    @extend .whatsapp;
 }
 .contactanosredes2 {
-    display: flex;
-    justify-content: row;
-    gap: 47px;
+    @include cont3contact(row, 47px);
 }
 .instagram {
-    display: flex;
-    flex-direction: row;
+    @extend .whatsapp;
 }
 .facebook {
-    display: flex;
-    flex-direction: row;
-}
-.rightcontactanos i {
-    color: $cereza;
-    font-size: 18px;
-    padding: 5px;
-    margin-top: 3px;
+    @extend .whatsapp;
 }
 .pcontactanos3 {
-    font-family: 'DM Sans';
-    color: $cereza;
-    font-size: 14px;
+    @include pcontact($parrafo, $cereza, 14px);
 }
 .contactanosform {
     align-items: center;
@@ -358,28 +353,25 @@ body {
     margin-bottom: 15px;
 }
 #mensaje {
-    width: 450px;
-    margin-bottom: 15px;
+    @extend #email;
 }
 #nombre {
     width: 222px;
 }
 #apellido {
-    width: 222px;
+    @extend #nombre;
 }
 .botonenviar {
+    @include pcontact($parrafo, $rosado, 10px);
     background-color: $cereza;
-    font-family: 'DM Sans';
     display: block;
     margin: 0 auto;
     border: none;
-    color: $rosado;
     padding: 8px 30px;
-    font-size: 10px;
     border-radius: 3px;
     cursor: pointer;
 
-    :hover {
+    &:hover {
         background-color: #BF7256;
     }
 }
@@ -394,16 +386,10 @@ body {
     .rightcontactanos {
         max-width: 500px;
     }
-    #email {
+    #email, #mensaje {
         width: 490px;
     }
-    #mensaje {
-        width: 490px;
-    }
-    #nombre {
-        width: 242px;
-    }
-    #apellido {
+    #nombre, #apellido {
         width: 242px;
     }
     .contactanosform {
@@ -424,6 +410,14 @@ body {
     .rightcontactanos {
         max-width: 320px;
         padding:0;
+
+        i {
+            font-size: 12px;
+    }
+
+        p {
+            font-size: 12px;
+        }
     }
     .contactanosredes1 {
         display: flex;
@@ -443,23 +437,11 @@ body {
         padding: 10px;
         gap: 0;
     }
-    .rightcontactanos i {
-        font-size: 12px;
-    }
-    .rightcontactanos p {
-        font-size: 12px;
-    }
-    #email {
+    @mixin winfo1 {
         width: 320px;
     }
-    #mensaje {
-        width: 320px;
-    }
-    #nombre {
-        width: 320px;
-    }
-    #apellido {
-        width: 320px;
+    #email, #mensaje, #nombre, #apellido {
+        @include winfo1;
     }
     .pcontactanos3 {
         font-size: 12px;
@@ -492,37 +474,30 @@ body {
         width: 250px;
         height: 150px;
     }
-    .informaciongeneral {
+    @mixin media2cont ($flexd, $gap) {
         display: flex;
-        flex-direction: column;
+        flex-direction: $flexd;
+        gap: $gap;
+    }
+    .informaciongeneral {
+        @include media2cont(column, 0);
         align-items: flex-start;
-        gap: 0;
     }
     .containercontactanos {
         padding: 10px;
         gap: 0;
     }
     .contactanosredes1 {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
+        @include media2cont(column, 0);
     }
     .contactanosredes2 {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
+        @include media2cont(column, 0);
     }
-    #email {
+    @mixin winfo2 {
         width: 250px;
     }
-    #mensaje {
-        width: 250px;
-    }
-    #nombre {
-        width: 250px;
-    }
-    #apellido {
-        width: 250px;
+    #email, #mensaje, #nombre, #apellido {
+        @include winfo2;
     }
     .pcontactanos3 {
         font-size: 12px;
