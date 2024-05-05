@@ -787,11 +787,11 @@ body {
 .containerimgpp {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 30px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   background-color: white;
-  padding: 30px;
 }
 .containerimgpp img {
   width: 100%;
@@ -807,33 +807,33 @@ body {
 }
 
 .cardizq {
+  display: flex;
   width: 450px;
   height: 450px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   transition: 0.5s;
   position: relative;
+  flex-direction: column;
 }
 
 .cardder {
+  display: flex;
   width: 450px;
   height: 450px;
-  display: flex;
   justify-content: space-between;
   transition: 0.5s;
   position: relative;
 }
 
 .cardppcontent {
-  background-color: rgba(73, 56, 67, 0.7725490196);
+  display: flex;
   width: 100%;
   height: 100%;
-  position: absolute;
-  display: flex;
   justify-content: flex-end;
-  flex-direction: column;
   transition: 0.5s;
+  position: absolute;
+  background-color: rgba(73, 56, 67, 0.7725490196);
+  flex-direction: column;
   opacity: 0;
 }
 .cardppcontent:hover {
