@@ -176,7 +176,7 @@ body {
 /* Página principal: inicio sección "Carta" */
 .section3 {
     height: auto;
-    margin-bottom: 20px;
+    padding: 30px;
 }
 @mixin contcarta ($flexd, $justify, $align, $pad) {
     display: flex;
@@ -185,24 +185,12 @@ body {
     align-items: $align;
     padding: $pad;
 }
-.containercarta1 {
+.containercarta {
     @include contcarta(column, center, center, 20px);
 }
-.pcarta {
-    font-family: $parrafo;
-    font-size: 14px;
-    color: $cereza;
-    width: 50%;
-    text-align: center;
-    white-space: pre-wrap;
-}
 .containercarta2 {
-    @include contcarta(row, center, center, 20px);
-    gap: 60px;
-}
-.cartaimg {
-    margin-left: 5px;
-    margin-right: 5px;
+    @include contcarta(row, space-evenly, center, 20px);
+    gap: 150px;
 }
 @media (max-width: 879px) {
     .containercarta2 {

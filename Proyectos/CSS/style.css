@@ -1,7 +1,8 @@
 @charset "UTF-8";
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*footer */
@@ -281,10 +282,10 @@ body {
 /* Página principal: inicio sección "Carta" */
 .section3 {
   height: auto;
-  margin-bottom: 20px;
+  padding: 30px;
 }
 
-.containercarta1 {
+.containercarta {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,27 +293,13 @@ body {
   padding: 20px;
 }
 
-.pcarta {
-  font-family: "DM Sans";
-  font-size: 14px;
-  color: #942200;
-  width: 50%;
-  text-align: center;
-  white-space: pre-wrap;
-}
-
 .containercarta2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-  gap: 60px;
-}
-
-.cartaimg {
-  margin-left: 5px;
-  margin-right: 5px;
+  gap: 150px;
 }
 
 @media (max-width: 879px) {
@@ -832,23 +819,27 @@ body {
 /* Pedidos Personalizados: fin sección "Sus pedidos + Nuestra magia" */
 /* fin página "Pedidos Personalizados" */
 /* inicio página "Postres" */
+.sectionpostres {
+  margin-top: 20px;
+}
+
 .h3postres {
-  font-size: "Anek Devanagari";
+  font-family: "Anek Devanagari";
   color: #493843;
-  font-size: 23px;
+  font-size: 30px;
 }
 
 .titulospostres {
-  font-size: "Anek Devanagari";
-  color: #493843;
+  font-family: "Anek Devanagari";
+  color: #F8F7DA;
   font-size: 16px;
   text-align: left;
   width: 100%;
 }
 
 .ppostres {
-  font-size: "DM Sans";
-  color: #942200;
+  font-family: "DM Sans";
+  color: #D9AA8F;
   font-size: 13px;
   text-align: justify;
   width: 100%;
@@ -858,8 +849,8 @@ body {
   display: flex;
   flex-direction: row;
   padding: 20px 100px 30px;
-  background-color: white;
   gap: 50px;
+  background-color: white;
 }
 
 .antojos {
@@ -874,7 +865,9 @@ body {
 .cardpostres {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  background-color: #493843;
+  width: 500px;
+  margin-bottom: 20px;
 }
 .cardpostres img {
   width: 180px;
@@ -919,14 +912,17 @@ body {
   .listapostres {
     padding: 20px 20px 30px;
   }
+  .cardpostres {
+    width: 400px;
+  }
   .cardpostres-content {
     max-width: 180px;
   }
   .titulospostres {
-    font-size: 14px;
+    font-size: 15px;
   }
   .ppostres {
-    font-size: 11px;
+    font-size: 12px;
   }
   .cardpostres-image {
     display: flex;
@@ -940,9 +936,18 @@ body {
   .cardpostres {
     display: flex;
     flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
   }
   .cardpostres-content {
     max-width: 180px;
+  }
+  .titulospostres {
+    font-size: 14px;
+  }
+  .ppostres {
+    font-size: 11px;
   }
 }
 /* fin página "Postres" */
