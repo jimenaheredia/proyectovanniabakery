@@ -111,38 +111,39 @@ body {
 /* Página principal: inicio sección "Sobre Nosotros" */
 .section1 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  margin-top: 40px;
+  height: 700px;
+  gap: 100px;
+  padding: 20px;
 }
-.section1 .vannia {
-  float: right;
-  max-width: calc(50% - 40px); /* Ajusta el ancho máximo de la imagen */
-  margin-left: 100px;
+
+.vannia img {
+  width: 375px;
+  height: 500px;
 }
 
 .leftcontent {
-  float: left;
+  padding-top: 20px;
   max-width: 400px;
-  margin-right: 20px;
 }
 
 .head1 {
   font-family: "Anek Devanagari";
   color: #493843;
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
-  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .pnosotros {
   font-family: "DM Sans";
   color: #942200;
-  font-size: 15px;
+  font-size: 16px;
   text-align: justify;
   max-width: 400px;
-  white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
+  white-space: pre-wrap;
 }
 
 @media (max-width: 1023px) {
@@ -154,7 +155,7 @@ body {
     height: fit-content;
     margin-bottom: 40px;
   }
-  .section1 .vannia {
+  .vannia img {
     width: 100%;
     height: auto;
     margin-left: 0;
@@ -163,10 +164,10 @@ body {
 }
 @media (max-width: 560px) {
   .head1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .pnosotros {
-    font-size: 12px;
+    font-size: 14px;
   }
   .leftcontent {
     margin-right: 0;
@@ -178,39 +179,38 @@ body {
     justify-content: center;
     height: fit-content;
     margin-bottom: 40px;
+    gap: 40px;
     padding: 20px;
   }
-  .section1 .vannia {
+  .vannia img {
     max-width: 297px;
   }
 }
 @media (max-width: 390px) {
-  .section1 .vannia {
+  .vannia img {
     max-width: 250px;
   }
 }
 /* Página principal: fin sección "Sobre Nosotros" */
 /* Página principal: inicio sección "Servicios" */
 .section2 {
-  height: 340px;
+  height: 400px;
   background-color: white;
-  padding: 20px;
+  padding: 30px;
 }
 
 .containerservicios {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 23px;
+  padding: 20px;
 }
 
 .head2 {
   font-family: "Anek Devanagari";
   color: #493843;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   padding: 20px;
   width: 100%;
@@ -232,14 +232,14 @@ body {
 .head3 {
   font-family: "Anek Devanagari";
   color: #493843;
-  font-size: 17px;
+  font-size: 25px;
   margin-bottom: 5px;
 }
 
 .pservicios {
   font-family: "DM Sans";
   color: #942200;
-  font-size: 14px;
+  font-size: 15px;
   max-width: 250px;
   text-align: center;
   white-space: pre-wrap; /* Permite que los saltos de línea se muestren */
@@ -248,7 +248,7 @@ body {
 
 @media (min-width: 901px) and (max-width: 1199px) {
   .section2 {
-    height: 470px;
+    height: 400px;
   }
 }
 @media (max-width: 900px) {
