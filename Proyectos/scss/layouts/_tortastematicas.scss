@@ -5,18 +5,18 @@
 .py-5 {
     padding: 25px;
 }
+@mixin tortasttexto ($fontf, $color, $fonts, $align) {
+    font-family: $fontf;
+    color: $color;
+    font-size: $fonts;
+    text-align: $align;
+}
 .nombretortastem {
-    font-family: 'Anek Devanagari';
-    color: $morado;
-    font-size: 16px;
-    text-align: center;
+    @include tortasttexto($titulo, $morado, 16px, center);
     padding: 10px;
 }
 .ptortastem {
-    font-family: 'DM Sans';
-    color: $cereza;
-    font-size: 14px;
-    text-align: center;
+    @include tortasttexto($parrafo, $cereza, 14px, center);
 }
 .containerimgtt {
     width: 250px;

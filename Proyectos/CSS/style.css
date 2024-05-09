@@ -833,13 +833,13 @@ body {
 /* fin página "Pedidos Personalizados" */
 /* inicio página "Postres" */
 .h3postres {
-  font-family: "Anek Devanagari";
+  font-size: "Anek Devanagari";
   color: #493843;
   font-size: 23px;
 }
 
 .titulospostres {
-  font-family: "Anek Devanagari";
+  font-size: "Anek Devanagari";
   color: #493843;
   font-size: 16px;
   text-align: left;
@@ -847,7 +847,7 @@ body {
 }
 
 .ppostres {
-  font-family: "DM Sans";
+  font-size: "DM Sans";
   color: #942200;
   font-size: 13px;
   text-align: justify;
@@ -864,11 +864,11 @@ body {
 
 .antojos {
   display: flex;
-  flex: 1;
   flex-direction: column;
+  padding: 20px;
+  flex: 1;
   align-items: center;
   gap: 20px;
-  padding: 20px;
 }
 
 .cardpostres {
@@ -884,9 +884,9 @@ body {
 .cardpostres-content {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   max-width: 250px;
 }
 
@@ -975,8 +975,8 @@ body {
   font-family: "DM Sans";
   color: #942200;
   font-size: 14px;
-  text-align: center;
   padding: 20px;
+  text-align: center;
   margin-bottom: 0;
 }
 

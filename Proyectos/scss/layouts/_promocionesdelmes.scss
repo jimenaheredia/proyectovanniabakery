@@ -4,12 +4,15 @@
 #promocionesdelmes {
     padding: 30px 20px 0;
 }
+@mixin promocionestext ($fontf, $color, $fonts, $pad, $align) {
+    font-family: $fontf;
+    color: $color;
+    font-size: $fonts;
+    padding: $pad;
+    text-align: $align;
+}
 .h3promo {
-    font-family: 'Anek Devanagari';
-    color: $morado;
-    font-size: 25px;
-    padding: 40px;
-    text-align: center;
+    @include promocionestext($titulo, $morado, 25px, 40px, center);
 }
 .imagenpromodelmes img{
     width: 100%;
@@ -22,11 +25,7 @@
     background-color: $blanco;
 }
 .ppromo {
-    font-family: 'DM Sans';
-    color: $cereza;
-    font-size: 14px;
-    text-align: center;
-    padding: 20px;
+    @include promocionestext($parrafo, $cereza, 14px, 20px, center);
     margin-bottom: 0;
 }
 .col-lg-6 {

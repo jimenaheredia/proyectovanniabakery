@@ -1,42 +1,40 @@
 /* inicio página "Postres" */
+@mixin postresletras ($fontf, $colour, $fonts) {
+    font-size: $fontf;
+    color: $colour;
+    font-size: $fonts;
+}
 .h3postres {
-    font-family: 'Anek Devanagari';
-    color: $morado;
-    font-size: 23px;
+    @include postresletras($titulo, $morado, 23px);
 }
 .titulospostres {
-    font-family: 'Anek Devanagari';
-    color: $morado;
-    font-size: 16px;
+    @include postresletras($titulo, $morado, 16px);
     text-align: left;
     width: 100%;
 }
 .ppostres {
-    font-family: 'DM Sans';
-    color: $cereza;
-    font-size: 13px;
+    @include postresletras($parrafo, $cereza, 13px);
     text-align: justify;
     width: 100%;
 }
-.listapostres {
+@mixin containerspostres ($flexd, $pad) {
     display: flex;
-    flex-direction: row;
-    padding: 20px 100px 30px;
+    flex-direction: $flexd;
+    padding: $pad;
+}
+.listapostres {
+    @include containerspostres(row, 20px 100px 30px);
     background-color: $blanco;
     gap: 50px;
 }
 .antojos {
-    display: flex;
+    @include containerspostres(column, 20px);
     flex: 1;
-    flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 20px;
 }
 .cardpostres {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
+    @include containerspostres(row, 20px);
 
     img {
         width: 180px;
@@ -44,11 +42,9 @@
     }
 }
 .cardpostres-content {
-    display: flex;
-    flex-direction: column;
+    @include containerspostres(column, 10px);
     justify-content: center;
     align-items: center;
-    padding: 10px;
     max-width: 250px;
 }
 @media (max-width:1148px) {
