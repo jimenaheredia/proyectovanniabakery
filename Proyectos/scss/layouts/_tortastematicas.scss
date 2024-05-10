@@ -12,27 +12,51 @@
     text-align: $align;
 }
 .nombretortastem {
-    @include tortasttexto($titulo, $morado, 16px, center);
-    padding: 10px;
+    @include tortasttexto($titulo, $rosado2, 16px, center);
+    padding: 20px 10px 0 10px;
 }
 .ptortastem {
-    @include tortasttexto($parrafo, $cereza, 14px, center);
+    @include tortasttexto($parrafo, $rosado, 14px, center);
 }
 .containerimgtt {
-    width: 250px;
-    height: 300px;
+    width: 262.5px;
+    height: 350px;
+    position: relative;
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
+    &:hover .img1{
+        opacity: 0;
+    }
+
+    &:hover .img2 {
+        opacity: 1;
+    }
+}
+.img1 {
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+.img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+.containerimgtt-content {
+    background-color: $morado;
+    width: 262.5px;
 }
 .col-lg-4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 30px;
 }
 /* fin página "Tortas Temáticas" */

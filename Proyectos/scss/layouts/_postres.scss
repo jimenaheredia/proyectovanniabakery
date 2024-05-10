@@ -11,12 +11,12 @@
     @include postresletras($titulo, $morado, 30px);
 }
 .titulospostres {
-    @include postresletras($titulo, $rosado, 16px);
+    @include postresletras($titulo, $rosado2, 16px);
     text-align: left;
     width: 100%;
 }
 .ppostres {
-    @include postresletras($parrafo, $rosado2, 13px);
+    @include postresletras($parrafo, $rosado, 13px);
     text-align: justify;
     width: 100%;
 }

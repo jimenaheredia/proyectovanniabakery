@@ -11,7 +11,7 @@
     font-size: $fontsize;
 }
 .h3pedidosp {
-    @include textopp ($titulo, $morado, 23px);
+    @include textopp ($titulo, $morado, 30px);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -67,7 +67,7 @@
     @include estilospasos;
 }
 .pasospedidosp {
-    @include textopp ($titulo, $morado, 16px);
+    @include textopp ($titulo, $morado, 17px);
 }
 .ppedidos2 {
     @include textopp ($parrafo, $cereza, 13px);
@@ -113,7 +113,16 @@
     }
 }
 .containercard {
-    @include containermix(row, 100px, 30px 20px 20px);
+    @include containermix(row, 200px, 30px 20px 20px);
+}
+.cardizq {
+    display: flex;
+    flex-direction: column;
+    background-color: $morado;
+    height: 570px;
+}
+.cardder {
+    @extend .cardizq;
 }
 @mixin cardmix ($w, $h, $justify, $transition, $position) {
     display: flex;
@@ -123,12 +132,13 @@
     transition: $transition;
     position: $position;
 }
-.cardizq {
-    @include cardmix(450px, 450px, center, 0.5s, relative);
+.cardizq-img {
+    @include cardmix(375px, 500px, center, 0.5s, relative);
     flex-direction: column;
 }
-.cardder {
-    @include cardmix(450px, 450px, space-between, 0.5s, relative);
+.cardder-img {
+    @include cardmix(375px, 500px, center, 0.5s, relative);
+    flex-direction: column;
 }
 .cardppcontent {
     @include cardmix(100%, 100%, flex-end, 0.5s, absolute);
@@ -146,6 +156,9 @@
     text-align: $textalign;
     padding: $pad;
 }
+.titulocardpp {
+    @include texto2pp($titulo, $rosado, 23px, center, 20px 20px 15px 20px);
+}
 .hcardpp {
     @include texto2pp ($titulo, $rosado, 23px, left, 20px 20px 5px);
 }
@@ -161,23 +174,42 @@
     }
 }
 @media (max-width:567px) {
+    .cardizq-img {
+        width: 262px;
+        height: 350px;
+    }
     .cardizq {
-        width: 350px;
+        height: 415px;
+        width: 262px;
+    }
+    .cardder-img {
+        width: 262px;
         height: 350px;
     }
     .cardder {
-        width: 350px;
-        height: 350px;
+        height: 415px;
+        width: 262px;
+    }
+    .titulocardpp {
+        font-size: 18px;
     }
 }
 @media (max-width:389px) {
+    .cardizq-img {
+        width: 210px;
+        height: 280px;
+    }
     .cardizq {
-        width: 280px;
+        height: 350px;
+        width: 210px;
+    }
+    .cardder-img {
+        width: 210px;
         height: 280px;
     }
     .cardder {
-        width: 280px;
-        height: 280px;
+        height: 350px;
+        width: 210px;
     }
 }
 /* Pedidos Personalizados: fin sección "Sus pedidos + Nuestra magia" */

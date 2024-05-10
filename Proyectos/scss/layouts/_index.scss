@@ -142,7 +142,7 @@ body {
 }
 @media (min-width: 901px) and (max-width: 1199px) {
     .section2 {
-        height: 400px;
+        height: auto;
     }
 }
 @media (max-width: 900px) {
@@ -189,10 +189,47 @@ body {
     @include contcarta(column, center, center, 20px);
 }
 .containercarta2 {
-    @include contcarta(row, space-evenly, center, 20px);
+    @include contcarta(row, space-evenly, center, 20px 0 20px);
     gap: 150px;
 }
-@media (max-width: 879px) {
+.cartaimg {
+    flex: 1 0 auto;
+    position: relative;
+}
+.imagecontainer2 {
+    width: 450px;
+    height: 338px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+
+    img {
+        transition: transform 0.5s ease;
+    }
+}
+.cartaimg:hover .imagecontainer2 img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 580px) {
+    .containercarta2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section3 {
+        height: auto;
+    }
+    .imagecontainer2 {
+        width: 300px;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+@media (max-width: 1065px) {
     .containercarta2 {
         display: flex;
         flex-direction: column;
@@ -201,25 +238,17 @@ body {
         height: auto;
     }
 }
-@media (max-width: 560px) {
-    .pcarta {
-        width: 250px;
-        font-size: 12px;
-    }    
-}
-@media (min-width: 691px) and (max-widht:1190px) {
-    .pcarta {
-        width: 520px;
-    }
-}
-@media (min-width: 1191px) {
-    .pcarta {
-        width: 820px;
-    }
+@media (min-width: 1065px) and (max-width:1143px) {
     .containercarta2 {
         gap: 80px;
     }
 }
+@media (min-width: 1143px) {
+    .containercarta2 {
+        gap: 150px;
+    }
+}
+
 
 /* Página principal: fin sección "Carta" */
 
