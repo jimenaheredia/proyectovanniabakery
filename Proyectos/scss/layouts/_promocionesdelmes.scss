@@ -1,6 +1,6 @@
 /* inicio página "Promociones del mes" */
 
-/* Promociones del mes: inicio sección "Promociones del mes" */
+/* Promociones del mes: inicio sección 1 */
 #promocionesdelmes {
     padding: 30px 20px 0;
 }
@@ -11,16 +11,15 @@
     padding: $pad;
     text-align: $align;
 }
-.h3promo {
+.h1promo {
     @include promocionestext($titulo, $morado, 25px, 40px, center);
 }
 .imagenpromodelmes img{
     width: 100%;
     height: auto;    
 }
-/* Promociones del mes: fin sección "Promociones del mes" */
 
-/* Promociones del mes: inicio sección "¡Felices Pascuas con Vannia!" */
+/* Promociones del mes: inicio sección 2 */
 .seccion2promociones {
     background-color: $blanco;
 }
@@ -86,5 +85,5 @@
         }
     }
 }
-/* Promociones del mes: fin sección "¡Felices Pascuas con Vannia!" */
+
 /* fin página "Promociones del mes" */

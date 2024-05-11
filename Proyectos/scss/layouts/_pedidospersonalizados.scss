@@ -10,7 +10,7 @@
     color: $colour;
     font-size: $fontsize;
 }
-.h3pedidosp {
+.h1pedidosp {
     @include textopp ($titulo, $morado, 30px);
     display: flex;
     justify-content: center;

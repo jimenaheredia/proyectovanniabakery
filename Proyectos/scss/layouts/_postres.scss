@@ -7,7 +7,7 @@
     color: $colour;
     font-size: $fonts;
 }
-.h3postres {
+.h2postres {
     @include postresletras($titulo, $morado, 30px);
 }
 .titulospostres {

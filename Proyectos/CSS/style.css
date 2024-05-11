@@ -263,9 +263,6 @@ body {
   }
 }
 @media (max-width: 478px) {
-  .head2 {
-    font-size: 25px;
-  }
   .head3 {
     font-size: 15px;
   }
@@ -633,7 +630,7 @@ body {
   padding: 30px 40px 20px;
 }
 
-.h3pedidosp {
+.h1pedidosp {
   font-family: "Anek Devanagari";
   color: #493843;
   font-size: 30px;
@@ -886,7 +883,7 @@ body {
   margin-top: 20px;
 }
 
-.h3postres {
+.h2postres {
   font-family: "Anek Devanagari";
   color: #493843;
   font-size: 30px;
@@ -1015,12 +1012,12 @@ body {
 }
 /* fin página "Postres" */
 /* inicio página "Promociones del mes" */
-/* Promociones del mes: inicio sección "Promociones del mes" */
+/* Promociones del mes: inicio sección 1 */
 #promocionesdelmes {
   padding: 30px 20px 0;
 }
 
-.h3promo {
+.h1promo {
   font-family: "Anek Devanagari";
   color: #493843;
   font-size: 25px;
@@ -1033,8 +1030,7 @@ body {
   height: auto;
 }
 
-/* Promociones del mes: fin sección "Promociones del mes" */
-/* Promociones del mes: inicio sección "¡Felices Pascuas con Vannia!" */
+/* Promociones del mes: inicio sección 2 */
 .seccion2promociones {
   background-color: white;
 }
@@ -1104,7 +1100,6 @@ body {
     height: 260px;
   }
 }
-/* Promociones del mes: fin sección "¡Felices Pascuas con Vannia!" */
 /* fin página "Promociones del mes" */
 /* inicio página "Tortas Temáticas" */
 #tortastematicas {
