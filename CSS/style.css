@@ -65,6 +65,10 @@ nav {
   padding: 20px;
 }
 
+.pruebacontainerfluid1 {
+  background-color: white;
+}
+
 .navbar-toggler-icon {
   color: #493843;
 }
@@ -74,8 +78,16 @@ nav {
   font-family: "Anek Devanagari";
 }
 
-.btn-close {
-  color: #493843;
+.offcanvas-body {
+  background-color: #F8F7DA;
+}
+
+.bg-body-tertiary {
+  background-color: white;
+}
+
+.offcanvas-header {
+  background-color: #493843;
 }
 
 @media (min-width: 1250px) {

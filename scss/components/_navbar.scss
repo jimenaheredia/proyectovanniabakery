@@ -46,6 +46,9 @@ nav {
 .container-fluid {
     padding: 20px;
 }
+.pruebacontainerfluid1 {
+    background-color: $blanco;
+}
 .navbar-toggler-icon {
     color: $morado;
 }
@@ -53,8 +56,14 @@ nav {
     color: $morado;
     font-family: 'Anek Devanagari';
 }
-.btn-close {
-    color: $morado;
+.offcanvas-body{
+    background-color: $rosado;
+}
+.bg-body-tertiary {
+    background-color: $blanco;
+}
+.offcanvas-header {
+    background-color: $morado;
 }
 @media (min-width: 1250px) {
     .bg-body-tertiary {
