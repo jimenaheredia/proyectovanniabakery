@@ -1086,14 +1086,14 @@ body {
   }
   .col-lg-6 img {
     width: 250px;
-    height: 150px;
+    height: 188px;
   }
   .col-lg-12 {
     padding: 10px;
   }
   .col-lg-12 img {
     width: 250px;
-    height: 150px;
+    height: 188px;
   }
 }
 @media (min-width: 380px) and (max-width: 528px) {
@@ -1109,7 +1109,7 @@ body {
   }
   .col-lg-12 img {
     width: 360px;
-    height: 260px;
+    height: 270px;
   }
 }
 /* fin página "Promociones del mes" */
