@@ -354,6 +354,11 @@ body {
 }
 .pcontactanos3 {
     @include pcontact($parrafo, $cereza, 14px);
+    padding: 5px;
+    resize: none;
+}
+.pcontactanos3:focus-within {
+    outline: 1px solid $cereza;
 }
 .contactanosform {
     align-items: center;

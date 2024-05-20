@@ -90,12 +90,18 @@ nav {
   background-color: #493843;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1260px) {
   .bg-body-tertiary {
     display: none;
   }
+  .navgrande {
+    display: flex;
+  }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1260px) {
+  .bg-body-tertiary {
+    display: flex;
+  }
   .navgrande {
     display: none;
   }
@@ -106,6 +112,35 @@ nav {
     max-height: 90px;
   }
 }
+.dropdown-menu {
+  width: 200px;
+  height: 110px;
+  padding: 20px 0 20px 0;
+}
+
+.dropdownitemcont {
+  width: 60px;
+  height: 30px;
+  padding: 0;
+  margin-left: 0;
+  padding: 0;
+}
+.dropdownitemcont a {
+  text-align: left;
+}
+
+.dropdown-item {
+  padding-left: 0;
+}
+
+.item2 {
+  width: 140px;
+}
+
+.dropdownitemcont1 {
+  padding: 0 10px 0 10px;
+}
+
 /* fin navbar */
 body {
   background-color: #F8F7DA;
@@ -472,6 +507,12 @@ body {
   font-family: "DM Sans";
   color: #942200;
   font-size: 14px;
+  padding: 5px;
+  resize: none;
+}
+
+.pcontactanos3:focus-within {
+  outline: 1px solid #942200;
 }
 
 .contactanosform {
@@ -1065,7 +1106,7 @@ body {
 }
 .col-lg-6 img {
   width: 450px;
-  height: 350px;
+  height: 338px;
 }
 
 .col-lg-12 {
@@ -1077,7 +1118,7 @@ body {
 }
 .col-lg-12 img {
   width: 450px;
-  height: 350px;
+  height: 338px;
 }
 
 @media (max-width: 380px) {
