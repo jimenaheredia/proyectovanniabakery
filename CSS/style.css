@@ -116,17 +116,15 @@ nav {
   width: 200px;
   height: 110px;
   padding: 20px 0 20px 0;
+  border-color: #F8F7DA;
 }
 
 .dropdownitemcont {
   width: 60px;
   height: 30px;
   padding: 0;
-  margin-left: 0;
+  margin: 0;
   padding: 0;
-}
-.dropdownitemcont a {
-  text-align: left;
 }
 
 .dropdown-item {
@@ -139,6 +137,17 @@ nav {
 
 .dropdownitemcont1 {
   padding: 0 10px 0 10px;
+}
+
+.menucel {
+  background-color: #F8F7DA;
+  border-color: #F8F7DA;
+  padding: 0;
+  height: 70px;
+}
+
+.item2b {
+  width: 178px;
 }
 
 /* fin navbar */
