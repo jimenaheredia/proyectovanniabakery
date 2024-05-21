@@ -8,7 +8,7 @@
 /*footer */
 .footer {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 14px;
   text-align: center;
   padding: 20px;
@@ -79,7 +79,7 @@ nav {
 }
 
 .offcanvas-body {
-  background-color: #F8F7DA;
+  background-color: #FFDDE2;
 }
 
 .bg-body-tertiary {
@@ -116,7 +116,7 @@ nav {
   width: 180px;
   height: 110px;
   padding: 15px 0 20px 0;
-  border-color: #F8F7DA;
+  border-color: #FFDDE2;
 }
 
 .dropdownitemcont {
@@ -140,8 +140,8 @@ nav {
 }
 
 .menucel {
-  background-color: #F8F7DA;
-  border-color: #F8F7DA;
+  background-color: #FFDDE2;
+  border-color: #FFDDE2;
   padding: 0;
   height: 70px;
 }
@@ -192,7 +192,7 @@ nav {
 
 /* fin navbar */
 body {
-  background-color: #F8F7DA;
+  background-color: #FFDDE2;
 }
 
 /* inicio página principal (index) */
@@ -236,7 +236,7 @@ body {
 
 .pnosotros {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 16px;
   text-align: justify;
   max-width: 400px;
@@ -335,7 +335,7 @@ body {
 
 .pservicios {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 15px;
   max-width: 250px;
   text-align: center;
@@ -508,13 +508,13 @@ body {
 }
 
 .fa-location-dot {
-  color: #942200;
+  color: #7A0000;
   padding: 5px;
 }
 
 .pcontactanos2 {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 12px;
 }
 
@@ -528,7 +528,7 @@ body {
   padding: 5px;
 }
 .rightcontactanos i {
-  color: #942200;
+  color: #7A0000;
   font-size: 18px;
   padding: 5px;
   margin-top: 3px;
@@ -554,14 +554,14 @@ body {
 
 .pcontactanos3 {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 14px;
   padding: 5px;
   resize: none;
 }
 
 .pcontactanos3:focus-within {
-  outline: 1px solid #942200;
+  outline: 1px solid #7A0000;
 }
 
 .contactanosform {
@@ -583,9 +583,9 @@ body {
 
 .botonenviar {
   font-family: "DM Sans";
-  color: #F8F7DA;
+  color: #FFDDE2;
   font-size: 10px;
-  background-color: #942200;
+  background-color: #7A0000;
   display: block;
   margin: 0 auto;
   border: none;
@@ -729,7 +729,7 @@ body {
 /* Pedidos Personalizados: inicio sección "Pasos" */
 .containerpedidosp {
   height: auto;
-  background-color: #F8F7DA;
+  background-color: #FFDDE2;
   padding: 30px 40px 20px;
 }
 
@@ -745,7 +745,7 @@ body {
 
 .ppedidos1 {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 14px;
   display: flex;
   max-width: 650px;
@@ -762,7 +762,7 @@ body {
   padding: 30px 20px 10px;
 }
 .containerpasos i {
-  color: #F8F7DA;
+  color: #FFDDE2;
   font-size: 15px;
   margin-bottom: 10px;
   background-color: #493843;
@@ -822,7 +822,7 @@ body {
 
 .ppedidos2 {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 13px;
 }
 
@@ -911,7 +911,7 @@ body {
 
 .titulocardpp {
   font-family: "Anek Devanagari";
-  color: #F8F7DA;
+  color: #FFDDE2;
   font-size: 23px;
   text-align: center;
   padding: 20px 20px 15px 20px;
@@ -919,7 +919,7 @@ body {
 
 .hcardpp {
   font-family: "Anek Devanagari";
-  color: #F8F7DA;
+  color: #FFDDE2;
   font-size: 23px;
   text-align: left;
   padding: 20px 20px 5px;
@@ -927,7 +927,7 @@ body {
 
 .pcardpp {
   font-family: "DM Sans";
-  color: #F8F7DA;
+  color: #FFDDE2;
   font-size: 13px;
   text-align: justify;
   padding: 0 20px 20px;
@@ -1002,7 +1002,7 @@ body {
 
 .ppostres {
   font-family: "DM Sans";
-  color: #F8F7DA;
+  color: #FFDDE2;
   font-size: 13px;
   text-align: justify;
   width: 100%;
@@ -1140,7 +1140,7 @@ body {
 
 .ppromo {
   font-family: "DM Sans";
-  color: #942200;
+  color: #7A0000;
   font-size: 14px;
   padding: 20px;
   text-align: center;
@@ -1223,7 +1223,7 @@ body {
 
 .ptortastem {
   font-family: "DM Sans";
-  color: #F8F7DA;
+  color: #FFDDE2;
   font-size: 14px;
   text-align: center;
 }
