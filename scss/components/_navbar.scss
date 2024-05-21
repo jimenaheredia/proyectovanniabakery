@@ -88,9 +88,9 @@ nav {
     }
 }
 .dropdown-menu {
-    width: 200px;
+    width: 180px;
     height: 110px;
-    padding: 20px 0 20px 0;
+    padding: 15px 0 20px 0;
     border-color: $rosado;
 }
 .dropdownitemcont {
@@ -118,4 +118,9 @@ nav {
 .item2b {
     width: 178px;
 }
+.navgrande ul li.dropdownitemcont {
+    margin: 10px 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+  }
 /* fin navbar */

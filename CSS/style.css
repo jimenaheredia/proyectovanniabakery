@@ -113,9 +113,9 @@ nav {
   }
 }
 .dropdown-menu {
-  width: 200px;
+  width: 180px;
   height: 110px;
-  padding: 20px 0 20px 0;
+  padding: 15px 0 20px 0;
   border-color: #F8F7DA;
 }
 
@@ -148,6 +148,12 @@ nav {
 
 .item2b {
   width: 178px;
+}
+
+.navgrande ul li.dropdownitemcont {
+  margin: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* fin navbar */
@@ -673,12 +679,13 @@ body {
   }
   .pcontactanos3 {
     font-size: 12px;
+    margin-bottom: 15px;
   }
   .contactanosform {
     padding: 0;
   }
   .formnombreapellido {
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 0;
   }
 }
