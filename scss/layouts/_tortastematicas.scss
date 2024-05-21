@@ -12,7 +12,7 @@
     text-align: $align;
 }
 .nombretortastem {
-    @include tortasttexto($titulo, $rosado2, 16px, center);
+    @include tortasttexto($titulo, $blanco, 16px, center);
     padding: 20px 10px 0 10px;
 }
 .ptortastem {

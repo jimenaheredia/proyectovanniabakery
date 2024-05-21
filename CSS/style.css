@@ -994,7 +994,7 @@ body {
 
 .titulospostres {
   font-family: "Anek Devanagari";
-  color: #D9AA8F;
+  color: white;
   font-size: 16px;
   text-align: left;
   width: 100%;
@@ -1215,7 +1215,7 @@ body {
 
 .nombretortastem {
   font-family: "Anek Devanagari";
-  color: #D9AA8F;
+  color: white;
   font-size: 16px;
   text-align: center;
   padding: 20px 10px 0 10px;
