@@ -122,5 +122,37 @@ nav {
     margin: 10px 15px 10px 15px;
     display: flex;
     flex-direction: column;
-  }
+}
+
+.titulonav:after { 
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: $rosado2;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+.titulonav:hover:after {
+    width: 100%;
+    right: 0;
+}
+
+.carta-hover:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: $rosado2;
+    bottom: 0;
+    right: 50%;
+    transition: all 1s;
+    will-change: width;
+}
+.carta-hover:hover::before {
+    width: 100%;
+    right: 0;
+}
 /* fin navbar */

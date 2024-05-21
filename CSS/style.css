@@ -156,6 +156,40 @@ nav {
   flex-direction: column;
 }
 
+.titulonav:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #D9AA8F;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+
+.titulonav:hover:after {
+  width: 100%;
+  right: 0;
+}
+
+.carta-hover:hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #D9AA8F;
+  bottom: 0;
+  right: 50%;
+  transition: all 1s;
+  will-change: width;
+}
+
+.carta-hover:hover::before {
+  width: 100%;
+  right: 0;
+}
+
 /* fin navbar */
 body {
   background-color: #F8F7DA;
